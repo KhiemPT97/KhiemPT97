@@ -7,7 +7,7 @@
 
 <!-- SOCIAL & PORTFOLIO LINKS -->
 <p align="center">
-  <a href="https://KhiemPT97.github.io" target="_blank">
+  <a href="https://khiempt97.github.io/KhiemPT97/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio_Website-0F172A?style=for-the-badge&logo=google-chrome&logoColor=38BDF8" alt="Portfolio" />
   </a>
   <a href="mailto:phuongthanhkhiem1997@gmail.com">
