@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phương Thanh Khiêm (Kris) — Native Mobile Engineer (iOS &amp; Android)</title>
+  <meta name="description" content="Portfolio của Phương Thanh Khiêm (Kris) — Kỹ sư phát triển ứng dụng Native Mobile: iOS Native (Swift, SwiftUI, UIKit) &amp; Android Native (Kotlin, Jetpack Compose)." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Ambient Background Glow -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand">
+        <span class="brand-badge"><i data-lucide="smartphone" class="icon-sm"></i></span>
+        <span class="brand-text">Kris<span class="brand-dot">.mobile</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">Chuyên môn Native Mobile</a>
+        <a href="#skills" data-i18n="nav.skills">Tech Stack</a>
+        <a href="#projects" data-i18n="nav.projects">Dự án Native Mobile</a>
+        <a href="#github" data-i18n="nav.github">GitHub Stats</a>
+        <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher (VI / EN) -->
+        <button class="btn-icon lang-btn" id="langToggle" title="Switch Language / Đổi ngôn ngữ" aria-label="Switch Language">
+          <i data-lucide="globe" class="icon-sm"></i>
+          <span id="langLabel">VI</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="btn-icon" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="icon-sm" id="themeIcon"></i>
+        </button>
+
+        <!-- GitHub Profile Link -->
+        <a href="https://github.com/" id="navGithubLink" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+          <i data-lucide="github" class="icon-sm"></i>
+          <span>GitHub</span>
+        </a>
+
+        <button class="btn-icon mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <i data-lucide="menu" class="icon-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span data-i18n="hero.status">Pure Native Mobile Engineer • Sẵn sàng cho các dự án mới</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.greeting">Xin chào, tôi là</span><br />
+            <span class="gradient-text">Phương Thanh Khiêm</span>
+            <span class="hero-nickname">(Kris)</span>
+          </h1>
+
+          <div class="hero-typing-wrapper">
+            <span class="prompt-symbol">📱</span>
+            <span id="typingText" class="typing-text">iOS Native (Swift) &amp; Android Native (Kotlin) Specialist</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-desc" data-i18n="hero.desc">
+            Kỹ sư chuyên sâu phát triển ứng dụng <strong>Native Mobile trên cả hai nền tảng iOS &amp; Android</strong>: thuần thục <strong>Swift, SwiftUI, UIKit trên iOS</strong> và <strong>Kotlin, Jetpack Compose trên Android</strong>. Tối ưu trải nghiệm mượt mà 60/120fps chuẩn Native, kiến trúc sạch (Clean Architecture, MVVM/MVI) và làm chủ quy trình phát hành App Store &amp; Google Play.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <i data-lucide="smartphone" class="icon-sm"></i>
+              <span data-i18n="hero.ctaProjects">Xem Dự án Native Mobile</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i data-lucide="mail" class="icon-sm"></i>
+              <span data-i18n="hero.ctaContact">Liên hệ hợp tác</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">iOS Native</span>
+              <span class="metric-label" data-i18n="hero.metric1">Swift • SwiftUI • UIKit</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">Android Native</span>
+              <span class="metric-label" data-i18n="hero.metric2">Kotlin • Jetpack Compose</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value" id="metricRepos">Store CI/CD</span>
+              <span class="metric-label" data-i18n="hero.metric3">App Store &amp; Google Play</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Mobile Developer Terminal Card -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-tabs">
+                <button class="term-tab active" data-tab="swift">iOS_Native.swift</button>
+                <button class="term-tab" data-tab="kotlin">Android_Native.kt</button>
+                <button class="term-tab" data-tab="architecture">CleanArch.swift</button>
+              </div>
+            </div>
+            <div class="terminal-body">
+              <pre id="codeDisplay" class="code-block"></pre>
+            </div>
+            <div class="terminal-footer">
+              <span><i data-lucide="smartphone" class="icon-xs"></i> 100% Pure Native</span>
+              <span>60/120 FPS</span>
+              <span class="term-status"><span class="dot-online"></span> Build Succeeded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & NATIVE SPECIALIZATION (BENTO GRID) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about.tag">TRỌNG TÂM CHUYÊN MÔN</span>
+          <h2 class="section-title" data-i18n="about.title">100% Pure Native Mobile: Làm chủ iOS Native &amp; Android Native</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">
+            Tập trung chuyên sâu vào công nghệ Native cốt lõi của Apple và Google để đem lại hiệu năng, độ mượt mà và trải nghiệm phần cứng tối đa.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Featured Primary Card 1: iOS Native -->
+          <div class="bento-card bento-featured">
+            <div class="bento-badge" data-i18n="about.primaryBadge">🍏 Mũi nhọn iOS Native</div>
+            <div class="bento-icon blue">
+              <i data-lucide="apple"></i>
+            </div>
+            <h3 data-i18n="about.domain1Title">iOS Native Development (Swift &amp; SwiftUI)</h3>
+            <p data-i18n="about.domain1Desc">
+              Phát triển ứng dụng iOS/iPadOS chuẩn Apple Human Interface Guidelines. Thành thạo Swift, SwiftUI, UIKit, Combine, Swift Concurrency (async/await), CoreData/SwiftData, tối ưu hiệu năng bộ nhớ qua Instruments và phát hành App Store / TestFlight.
+            </p>
+            <div class="bento-tags">
+              <span class="tag-highlight">Swift</span>
+              <span class="tag-highlight">SwiftUI</span>
+              <span class="tag-highlight">UIKit</span>
+              <span>Combine</span>
+              <span>Async/Await</span>
+              <span>CoreData / SwiftData</span>
+            </div>
+          </div>
+
+          <!-- Featured Primary Card 2: Android Native -->
+          <div class="bento-card bento-featured">
+            <div class="bento-badge badge-android" data-i18n="about.primaryBadge2">🤖 Mũi nhọn Android Native</div>
+            <div class="bento-icon emerald">
+              <i data-lucide="smartphone"></i>
+            </div>
+            <h3 data-i18n="about.domain2Title">Android Native Development (Kotlin &amp; Compose)</h3>
+            <p data-i18n="about.domain2Desc">
+              Xây dựng ứng dụng Android hiện đại chuẩn Material Design 3. Thành thạo Kotlin, Jetpack Compose, Coroutines &amp; Flow, Dagger/Hilt, Room Database, Retrofit, tối ưu pin/bộ nhớ và quản lý phát hành trên Google Play Console.
+            </p>
+            <div class="bento-tags">
+              <span class="tag-highlight">Kotlin</span>
+              <span class="tag-highlight">Jetpack Compose</span>
+              <span class="tag-highlight">Android SDK</span>
+              <span>Coroutines &amp; Flow</span>
+              <span>Hilt / Room</span>
+              <span>Google Play</span>
+            </div>
+          </div>
+
+          <!-- Featured Primary Card 3: Native Architecture & CI/CD -->
+          <div class="bento-card bento-featured">
+            <div class="bento-badge badge-cross" data-i18n="about.primaryBadge3">🏗️ Kiến trúc &amp; Store CI/CD</div>
+            <div class="bento-icon cyan">
+              <i data-lucide="layers"></i>
+            </div>
+            <h3 data-i18n="about.domain3Title">Kiến trúc Native (Clean Architecture &amp; Store CI/CD)</h3>
+            <p data-i18n="about.domain3Desc">
+              Áp dụng các mẫu kiến trúc chuẩn mực: Clean Architecture, MVVM-C, MVI, VIPER và Modularization. Thiết lập pipeline tự động build, ký chứng chỉ và release lên App Store &amp; Google Play với Fastlane, Firebase và GitHub Actions.
+            </p>
+            <div class="bento-tags">
+              <span class="tag-highlight">Clean Architecture</span>
+              <span class="tag-highlight">MVVM-C / MVI</span>
+              <span>Modularization</span>
+              <span>Fastlane</span>
+              <span>Store CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Supporting Stack (Web, Backend, AI) -->
+          <div class="bento-card bento-secondary">
+            <div class="bento-icon purple">
+              <i data-lucide="puzzle"></i>
+            </div>
+            <h3 data-i18n="about.domain4Title">Kỹ năng phụ trợ: Backend, Web &amp; On-Device AI</h3>
+            <p data-i18n="about.domain4Desc">
+              Các công nghệ bổ trợ giúp kết nối liền mạch ứng dụng di động với hệ thống hạ tầng: CoreML, TensorFlow Lite, Firebase, Supabase, Node.js, Python, React/Next.js và Docker.
+            </p>
+            <div class="bento-tags">
+              <span>CoreML / TFLite</span><span>Firebase / APNs</span><span>Node.js / Python</span><span>React / Next.js</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK & SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills.tag">TECH STACK</span>
+          <h2 class="section-title" data-i18n="skills.title">Hệ sinh thái Native Mobile &amp; Công nghệ Phụ trợ</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">
+            Nổi bật các công nghệ Native cốt lõi (iOS Native &amp; Android Native), kèm các kỹ năng phụ trợ phục vụ toàn diện sản phẩm.
+          </p>
+        </div>
+
+        <div class="filter-tabs" id="skillFilters">
+          <button class="filter-btn active" data-filter="mobile-native" data-i18n="skills.filterMobile">📱 Native Mobile (iOS &amp; Android)</button>
+          <button class="filter-btn" data-filter="mobile-arch" data-i18n="skills.filterArch">🏗️ Kiến trúc &amp; Store CI/CD</button>
+          <button class="filter-btn" data-filter="supporting" data-i18n="skills.filterSupporting">🧩 Kỹ năng phụ trợ (Backend/Web/AI)</button>
+          <button class="filter-btn" data-filter="all" data-i18n="skills.filterAll">Tất cả</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Rendered dynamically via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & LIVE GITHUB REPOS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag">MOBILE SHOWCASE &amp; REPOSITORIES</span>
+          <h2 class="section-title" data-i18n="projects.title">Dự án Native Mobile (iOS &amp; Android) Tiêu biểu</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
+            Các ứng dụng iOS Native và Android Native thực tế, cùng danh sách kho mã nguồn đồng bộ từ GitHub.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered dynamically via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB ANALYTICS SHOWCASE -->
+    <section class="section section-alt" id="github">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GITHUB ECOSYSTEM</span>
+          <h2 class="section-title" data-i18n="github.title">Hoạt động &amp; Thống kê GitHub</h2>
+          <p class="section-subtitle" data-i18n="github.subtitle">
+            Biểu đồ thống kê đóng góp mã nguồn và tỷ lệ ngôn ngữ lập trình trên GitHub.
+          </p>
+        </div>
+
+        <div class="github-username-bar">
+          <div class="gh-input-group">
+            <i data-lucide="github" class="icon-sm"></i>
+            <span class="gh-label" data-i18n="github.usernameLabel">GitHub Username:</span>
+            <input type="text" id="ghUsernameInput" placeholder="Nhập GitHub username của bạn..." />
+            <button class="btn-primary btn-sm" id="ghApplyBtn" data-i18n="github.applyBtn">Đồng bộ GitHub</button>
+          </div>
+          <p class="gh-hint" data-i18n="github.hint">
+            💡 Nhập GitHub username của bạn để tự động tải Repositories thực tế và biểu đồ GitHub Stats bên dưới.
+          </p>
+        </div>
+
+        <div class="github-cards-grid">
+          <div class="gh-stat-card">
+            <img id="ghStatsImg" src="https://github-readme-stats.vercel.app/api?username=github&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" loading="lazy" />
+          </div>
+          <div class="gh-stat-card">
+            <img id="ghLangsImg" src="https://github-readme-stats.vercel.app/api/top-langs/?username=github&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="gh-streak-card">
+          <img id="ghStreakImg" src="https://streak-stats.demolab.com?user=github&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-tag" data-i18n="contact.tag">KẾT NỐI</span>
+            <h2 class="section-title" data-i18n="contact.title">Cùng xây dựng ứng dụng Native Mobile tiếp theo của bạn!</h2>
+            <p class="contact-desc" data-i18n="contact.desc">
+              Bạn đang tìm kiếm một Native Mobile Engineer chuyên sâu iOS (Swift) &amp; Android (Kotlin) để tạo ra sản phẩm mượt mà, hiệu năng cao và chuẩn mực? Hãy liên hệ ngay với tôi.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:phuongthanhkhiem1997@gmail.com" class="contact-value">phuongthanhkhiem1997@gmail.com</a>
+                </div>
+                <button class="btn-icon copy-btn" id="copyEmailBtn" title="Copy Email">
+                  <i data-lucide="copy" class="icon-sm"></i>
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label" data-i18n="contact.locationLabel">Khu vực</span>
+                  <span class="contact-value">Vietnam 🇻🇳 (Remote / On-site)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <h3 data-i18n="contact.formTitle">Gửi tin nhắn nhanh</h3>
+            <div class="form-group">
+              <label for="senderName" data-i18n="contact.nameLabel">Tên của bạn</label>
+              <input type="text" id="senderName" required placeholder="Nguyễn Văn A" />
+            </div>
+            <div class="form-group">
+              <label for="senderSubject" data-i18n="contact.subjectLabel">Chủ đề hợp tác</label>
+              <input type="text" id="senderSubject" required placeholder="Phát triển ứng dụng iOS Native / Android Native..." />
+            </div>
+            <div class="form-group">
+              <label for="senderMessage" data-i18n="contact.messageLabel">Nội dung</label>
+              <textarea id="senderMessage" rows="4" required placeholder="Xin chào Kris, mình muốn trao đổi về dự án Mobile Native..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i data-lucide="send" class="icon-sm"></i>
+              <span data-i18n="contact.sendBtn">Soạn &amp; Gửi Email</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-badge"><i data-lucide="smartphone" class="icon-xs"></i></span>
+        <span>Phương Thanh Khiêm (Kris) — Native Mobile Engineer &copy; 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:phuongthanhkhiem1997@gmail.com">Email</a>
+        <a href="https://github.com/" id="footerGithubLink" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#hero" data-i18n="footer.backToTop">Lên đầu trang ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
