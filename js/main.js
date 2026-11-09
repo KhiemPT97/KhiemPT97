@@ -157,35 +157,51 @@ const SKILLS_DATA = [
 // --- DATA: FEATURED PURE NATIVE MOBILE PROJECTS ---
 const FEATURED_PROJECTS = [
   {
-    title: 'iOS Smart Health & Activity Tracker',
-    platform: 'iOS Native (Swift 6 & SwiftUI)',
-    desc: 'Ứng dụng iOS Native theo dõi sức khỏe và luyện tập cá nhân hóa xây dựng bằng SwiftUI & CoreData, tích hợp Apple HealthKit, WidgetKit và Live Activities Dynamic Island.',
-    tags: ['Swift', 'SwiftUI', 'HealthKit', 'WidgetKit', 'CoreData', 'MVVM-C'],
-    githubUrl: 'https://github.com/',
+    title: 'QuikPhuSan – POS Thanh toán QR & Ngân hàng',
+    platform: 'iOS (Swift) & Android (Kotlin)',
+    desc: 'Bộ ứng dụng POS nhận thanh toán QR và thẻ, tích hợp app-to-app với hệ thống thanh toán ngân hàng. Có bản iOS (SwiftUI) và các bản Android (Jetpack Compose) cho từng ngân hàng, kết nối backend riêng.',
+    tags: ['Swift', 'SwiftUI', 'Kotlin', 'Jetpack Compose', 'QR Payment', 'App-to-App'],
+    githubUrl: '',
     demoUrl: ''
   },
   {
-    title: 'Android Native E-Commerce & Delivery App',
-    platform: 'Android Native (Kotlin & Jetpack Compose)',
-    desc: 'Ứng dụng mua sắm và giao hàng thời gian thực với Jetpack Compose, Material 3, Coroutines, Flow, Dagger-Hilt, Room Database và tích hợp Google Maps SDK.',
-    tags: ['Kotlin', 'Jetpack Compose', 'Coroutines', 'Hilt', 'Room DB', 'Material 3'],
-    githubUrl: 'https://github.com/',
+    title: 'QuikSale – Quản lý bán hàng & Loa thanh toán',
+    platform: 'iOS (Swift) & Android (Java)',
+    desc: 'Ứng dụng cho người bán (merchant): tạo đơn, quản lý sản phẩm, nhận thanh toán bằng mã QR và thông báo giao dịch qua loa thanh toán. Trước đây có tên QuikTingTing. Phát triển trên cả iOS (UIKit) và Android.',
+    tags: ['Swift', 'UIKit', 'Alamofire', 'Java', 'Android', 'QR Payment'],
+    githubUrl: '',
     demoUrl: ''
   },
   {
-    title: 'iOS Native Audio Streaming & Equalizer',
-    platform: 'iOS Native (Swift & UIKit / AVFoundation)',
-    desc: 'Ứng dụng phát nhạc chuyên nghiệp với AudioKit và AVFoundation, xử lý âm thanh nền Background Audio, tối ưu hóa bộ nhớ không giật lag qua Instruments.',
-    tags: ['Swift', 'UIKit', 'AVFoundation', 'Combine', 'Background Task', 'CoreAudio'],
-    githubUrl: 'https://github.com/',
+    title: 'Ứng dụng Báo phát & Thu gom bưu gửi (Bưu điện)',
+    platform: 'iOS (Swift) & Android (Java/Kotlin)',
+    desc: 'Ứng dụng nghiệp vụ cho nhân viên bưu điện: nhận tin, thu gom và báo phát bưu gửi tại địa chỉ khách hàng. Phát triển trên cả iOS và Android, theo dõi lỗi và hiệu năng bằng Firebase Crashlytics.',
+    tags: ['Swift', 'Kotlin', 'Java', 'Firebase', 'Crashlytics'],
+    githubUrl: '',
     demoUrl: ''
   },
   {
-    title: 'AI Smart Camera: On-Device Real-time Vision',
-    platform: 'Native Mobile (CoreML & TensorFlow Lite)',
-    desc: 'Ứng dụng camera thông minh nhận diện vật thể và xử lý ảnh theo thời gian thực sử dụng Vision framework & CoreML trên iOS và CameraX & TensorFlow Lite trên Android.',
-    tags: ['CoreML', 'TFLite', 'Vision Framework', 'CameraX', 'AVFoundation'],
-    githubUrl: 'https://github.com/',
+    title: 'AgentBank',
+    platform: 'iOS (Swift) & Android (Java)',
+    desc: 'Ứng dụng ngân hàng đại lý trên iOS và Android. iOS dùng UIKit với Alamofire; Android viết bằng Java.',
+    tags: ['Swift', 'UIKit', 'Alamofire', 'Java', 'Android'],
+    githubUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'APay – Ví thanh toán',
+    platform: 'iOS (Swift) & Android (Kotlin)',
+    desc: 'Ứng dụng ví thanh toán, có QR code và nhiều môi trường build (dev / production). Android dùng Kotlin, Hilt và một phần Jetpack Compose; iOS dùng UIKit.',
+    tags: ['Swift', 'UIKit', 'Kotlin', 'Hilt', 'Jetpack Compose', 'QR Code'],
+    githubUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'Giọt Hồng – Web tin tức hiến máu',
+    platform: 'Web (Next.js)',
+    desc: 'Website tin tức và sự kiện hiến máu tình nguyện, có trang quản trị để quản lý bài viết, sự kiện, thư viện ảnh và nhà tài trợ.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Cloudinary'],
+    githubUrl: '',
     demoUrl: ''
   }
 ];
@@ -528,11 +544,11 @@ function initProjects() {
         <span class="project-platform-badge">
           <i data-lucide="smartphone" class="icon-xs"></i> ${proj.platform}
         </span>
-        <div class="project-links">
+        ${proj.githubUrl ? `<div class="project-links">
           <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" title="View Source">
             <i data-lucide="github" class="icon-sm"></i>
           </a>
-        </div>
+        </div>` : ''}
       </div>
       <h3 class="project-title">${proj.title}</h3>
       <p class="project-desc">${proj.desc}</p>

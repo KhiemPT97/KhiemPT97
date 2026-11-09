@@ -82,6 +82,21 @@ struct NativeMobileEngineer {
 
 ---
 
+## 💼 Dự án đã tham gia
+
+| Dự án | Nền tảng | Mô tả | Công nghệ |
+| :--- | :--- | :--- | :--- |
+| **QuikPhuSan** | iOS & Android | Bộ ứng dụng POS nhận thanh toán QR/thẻ, tích hợp app-to-app với hệ thống thanh toán ngân hàng | Swift, SwiftUI, Kotlin, Jetpack Compose |
+| **QuikSale** (trước đây là QuikTingTing) | iOS & Android | Ứng dụng cho người bán: tạo đơn, quản lý sản phẩm, nhận thanh toán QR, thông báo giao dịch qua loa thanh toán | Swift, UIKit, Alamofire, Java |
+| **Báo phát & Thu gom bưu gửi** | iOS & Android | Ứng dụng nghiệp vụ cho nhân viên bưu điện: thu gom và báo phát bưu gửi, theo dõi lỗi bằng Firebase Crashlytics | Swift, Kotlin, Java, Firebase |
+| **AgentBank** | iOS & Android | Ứng dụng ngân hàng đại lý | Swift, UIKit, Alamofire, Java |
+| **APay** | iOS & Android | Ứng dụng ví thanh toán, QR code | Swift, UIKit, Kotlin, Hilt, Compose |
+| **Giọt Hồng** | Web | Website tin tức & sự kiện hiến máu, có trang quản trị | Next.js, TypeScript, Prisma, PostgreSQL |
+
+> Phần lớn là dự án private/doanh nghiệp nên không công khai mã nguồn.
+
+---
+
 ## 🏆 GitHub Trophies
 
 <div align="center">
