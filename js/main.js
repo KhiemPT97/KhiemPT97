@@ -373,7 +373,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTerminalTabs();
   initSkillsFilter();
   initProjects();
-  initGitHubSync();
   initContactForm();
 });
 

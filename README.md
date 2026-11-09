@@ -1,13 +1,13 @@
 <div align="center">
 
 <!-- DYNAMIC TYPING BANNER -->
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
+<a href="https://github.com/KhiemPT97">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=110&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Ph%C6%B0%C6%A1ng+Thanh+Khi%C3%AAm+(Kris);Native+Mobile+Engineer+(iOS+%26+Android)+%F0%9F%93%B1;Swift+%E2%80%A2+SwiftUI+%E2%80%A2+UIKit+%E2%80%A2+Kotlin+%E2%80%A2+Jetpack+Compose" alt="Typing SVG" />
 </a>
 
 <!-- SOCIAL & PORTFOLIO LINKS -->
 <p align="center">
-  <a href="https://YOUR_GITHUB_USERNAME.github.io" target="_blank">
+  <a href="https://KhiemPT97.github.io" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio_Website-0F172A?style=for-the-badge&logo=google-chrome&logoColor=38BDF8" alt="Portfolio" />
   </a>
   <a href="mailto:phuongthanhkhiem1997@gmail.com">
@@ -16,7 +16,7 @@
   <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=Profile%20Views&color=38bdf8&style=for-the-badge" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=KhiemPT97&label=Profile%20Views&color=38bdf8&style=for-the-badge" alt="Profile Views" />
 </p>
 
 </div>
@@ -85,7 +85,7 @@ struct NativeMobileEngineer {
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=KhiemPT97&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" alt="GitHub Trophies" />
 </div>
 
 ---
@@ -93,12 +93,12 @@ struct NativeMobileEngineer {
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=KhiemPT97&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhiemPT97&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=KhiemPT97&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
 </div>
 
 ---
@@ -107,9 +107,9 @@ struct NativeMobileEngineer {
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KhiemPT97/KhiemPT97/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KhiemPT97/KhiemPT97/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KhiemPT97/KhiemPT97/output/github-contribution-grid-snake-dark.svg" />
   </picture>
 </div>
 
