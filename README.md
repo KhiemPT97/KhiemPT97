@@ -97,20 +97,7 @@ struct NativeMobileEngineer {
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=KhiemPT97&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" alt="GitHub Trophies" />
-</div>
-
----
-
 ## 📊 GitHub Analytics
-
-<div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=KhiemPT97&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhiemPT97&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
-</div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=KhiemPT97&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
